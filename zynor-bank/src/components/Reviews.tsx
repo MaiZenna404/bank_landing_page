@@ -61,7 +61,10 @@ export function Reviews() {
     
     return (
       <>
-        <section id="reviews" className="section gradient-bg text-white">
+        <section
+          id="reviews"
+          className="section bg-emerald-950/45 text-white pb-10 pt-10"
+        >
           <div className="max-w-7xl mx-auto">
             {/* Section Header */}
             <div className="text-center mb-16">
@@ -71,7 +74,7 @@ export function Reviews() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 What our customers say
               </h2>
-              <p className="text-white/80 text-lg max-w-2xl mx-auto">
+              <p className="text-green-400 text-lg max-w-2xl mx-auto">
                 Join thousands of satisfied customers who've transformed their
                 banking experience with FinanceHub.
               </p>
@@ -79,7 +82,7 @@ export function Reviews() {
 
             {/* reviews Carousel */}
             <div className="relative max-w-4xl mx-auto px-6 lg:px-0">
-              <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-gray-800">
+              <div className="p-8 bg-black/15 rounded-2xl shadow-green-700 shadow-md border-gray-400/25 border-1">
                 <div className="flex flex-col md:flex-row gap-8">
                   {/* Testimonial Image */}
                   <div className="w-24 h-24 md:w-32 md:h-32 mx-auto md:mx-0 flex-shrink-0">
@@ -151,7 +154,7 @@ export function Reviews() {
                     key={index}
                     onClick={() => setActiveIndex(index)}
                     className={`w-2 h-2 rounded-full transition-colors ${
-                      activeIndex === index ? "bg-white" : "bg-white/30"
+                      activeIndex === index ? "bg-emerald-400" : "bg-white/30"
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}
                   />

@@ -52,7 +52,7 @@ const services: BankService[] = [
 export function ServicesSection() {
   return (
     <>
-      <section id="features" className="section pb-10">
+      <section id="features" className="section pb-10 pt-10">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">

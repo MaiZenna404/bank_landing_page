@@ -23,8 +23,7 @@ export function Hero() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
-                      
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Text Content */}
             <div className="animate-fade-in">
               <div className="inline-block px-4 py-1 rounded-full bg-primary-50 text-primary-600 font-medium text-sm mb-6">
@@ -49,9 +48,8 @@ export function Hero() {
               </div>
               {/* User Profile Photos */}
               <div className="mt-8 flex items-center">
-                              <div className="flex -space-x-2 mr-4">
-                                 
-                {/* User profile photos à ajouter*/}
+                <div className="flex -space-x-2 mr-4">
+                  {/* User profile photos à ajouter*/}
                   {[1, 2, 3, 4].map((i) => (
                     <div
                       key={i}
@@ -75,8 +73,9 @@ export function Hero() {
                 <div className="relative bg-green-700 rounded-3xl shadow-xl overflow-hidden">
                   <div className="gradient-bg p-6">
                     <div className="flex justify-between items-center mb-10">
-                      <span className="text-lg font-semibold text-gray-950">
-                        FinanceHub
+                      <span className="text-lg font-medium text-gray-950">
+                        <span className="font-bold">Z</span>ynor{" "}
+                        <span className="font-bold">B</span>ank
                       </span>
                       <span className="text-lg font-medium text-gray-950">
                         VISA
@@ -118,7 +117,10 @@ export function Hero() {
                     </div>
                     <div className="space-y-2 mb-4">
                       {transactionLogs.map((transaction, name) => (
-                        <div key={name} className="flex justify-between text-sm text-gray-950">
+                        <div
+                          key={name}
+                          className="flex justify-between text-sm text-gray-950"
+                        >
                           <span>{transaction.description}</span>
                           <span
                             className={
