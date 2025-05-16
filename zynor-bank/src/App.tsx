@@ -1,10 +1,17 @@
 import './App.css'
+import { Hero } from './components/Hero'
+import { NavBar } from './components/NavBar'
+import { Reviews } from './components/Reviews'
+import { ServicesSection } from './components/ServicesSection'
 
 function App() {
 
   return (
     <>
-      <p className='text-emerald-500'>Welcome to Zynor Bank</p>
+      <NavBar />
+      <Hero />
+      <ServicesSection />
+      <Reviews />
     </>
   )
 }
