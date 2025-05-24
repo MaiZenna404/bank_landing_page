@@ -61,14 +61,11 @@ export function Reviews() {
     
     return (
       <>
-        <section
-          id="reviews"
-          className="section bg-emerald-950/45 text-white pb-10 pt-10"
-        >
+        <section id="reviews" className="section text-white pb-10 pt-10">
           <div className="max-w-7xl mx-auto">
             {/* Section Header */}
             <div className="text-center mb-16">
-              <div className="inline-block px-3 py-1 rounded-full bg-white/20 text-white font-medium text-sm mb-4">
+              <div className="inline-block px-3 py-1 rounded-full bg-emerald-600/75 text-white font-medium text-sm mb-6">
                 Customers Reviews
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">

@@ -173,7 +173,7 @@ export function MobileUseShowCase() {
 
           {/* Text Content */}
           <div className="order-1 lg:order-2">
-            <div className="inline-block px-4 py-1 rounded-full bg-primary-50 text-primary-600 font-medium text-sm mb-6">
+            <div className="inline-block px-3 py-1 rounded-full bg-emerald-600/75 text-white font-medium text-sm mb-6">
               Mobile Banking
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">

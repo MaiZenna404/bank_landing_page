@@ -70,7 +70,7 @@ export function PricingInfos() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <div className="inline-block px-3 py-1 rounded-full bg-primary-50 text-primary-600 font-medium text-sm mb-4">
+            <div className="inline-block px-3 py-1 rounded-full bg-emerald-600/75 text-white font-medium text-sm mb-6">
               Pricing
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
@@ -88,9 +88,7 @@ export function PricingInfos() {
               <div
                 key={index}
                 className={`bg-black/15 rounded-2xl overflow-hidden shadow-lg border border-emerald-400/50 transition-all ${
-                  pricing.popular
-                    ? "shadow-lg shadow-green-700 md:pb-4"
-                    : ""
+                  pricing.popular ? "shadow-lg shadow-green-700 md:pb-4" : ""
                 }`}
               >
                 {pricing.popular && (

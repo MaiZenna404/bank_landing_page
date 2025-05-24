@@ -1,17 +1,16 @@
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
+  interface transactionLog {
+    description: string;
+    amount: string;
+  }
 
-    interface transactionLog {
-        description: string;
-        amount: string;
-    }
-
-    const transactionLogs: transactionLog[] = [
-        { description: "Grocery Store", amount: "-$52.40" },
-        { description: "Salary Deposit", amount: "+$2,400.00" },
-        { description: "Online Shopping", amount: "-$86.22" },
-    ]
+  const transactionLogs: transactionLog[] = [
+    { description: "Grocery Store", amount: "-$52.40" },
+    { description: "Salary Deposit", amount: "+$2,400.00" },
+    { description: "Online Shopping", amount: "-$86.22" },
+  ];
 
   return (
     <>
@@ -26,7 +25,7 @@ export function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Text Content */}
             <div className="animate-fade-in">
-              <div className="inline-block px-4 py-1 rounded-full bg-primary-50 text-primary-600 font-medium text-sm mb-6">
+              <div className="inline-block px-3 py-1 rounded-full bg-emerald-600/75 text-white font-medium text-sm mb-6">
                 Banking Simplified
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -119,15 +118,17 @@ export function Hero() {
                       {transactionLogs.map((transaction, name) => (
                         <div
                           key={name}
-                          className="flex justify-between text-sm text-gray-950"
+                          className="flex justify-between text-sm text-gray-950 p-2 rounded-lg transition-all duration-200 group hover:bg-gray-100"
                         >
-                          <span>{transaction.description}</span>
+                          <span className="group-hover:translate-x-1 transition-transform duration-200">
+                            {transaction.description}
+                          </span>
                           <span
-                            className={
+                            className={`transition-all duration-200 group-hover:translate-x-[-0.25rem] ${
                               transaction.amount.startsWith("+")
-                                ? "text-green-600"
-                                : "text-red-500"
-                            }
+                                ? "font-semibold text-green-600 group-hover:text-green-700"
+                                : "font-semibold text-red-500 group-hover:text-red-600"
+                            }`}
                           >
                             {transaction.amount}
                           </span>
