@@ -46,7 +46,7 @@ const questionsAnswers: QADatas[] = [
 export default function QASection() {
   return (
     <>
-      <section className="pb-10 pt-15 text-white">
+      <section className="mt-8 pb-10 pt-15 text-white">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
           {/* FAQ Section Header */}
           <div className="text-center mb-16">
@@ -64,9 +64,14 @@ export default function QASection() {
           {/* FAQ Section Accordion */}
           {questionsAnswers.map((Item, index) => (
             <Accordion type="single" collapsible key={index} className="w-2/3">
-              <AccordionItem value={`item-${index}`} className="p-2 rounded-2xl mb-5 border border-emerald-600/25">
-                <AccordionTrigger className="text-left text-md font-medium py-5 text-emerald-600">{Item.question}</AccordionTrigger>
-                <AccordionContent className="pb-8">
+              <AccordionItem
+                value={`item-${index}`}
+                className="p-2 rounded-2xl mb-5 border-t border-emerald-500/50 shadow-md hover:shadow-lg transition-shadow"
+              >
+                <AccordionTrigger className="cursor-pointer text-left text-md ml-4 font-medium py-3 text-emerald-500/95 hover:no-underline hover:text-emerald-700">
+                  {Item.question}
+                </AccordionTrigger>
+                <AccordionContent className="mt-4 ml-4 pb-8 text-emerald-100">
                   {Item.answer}
                 </AccordionContent>
               </AccordionItem>

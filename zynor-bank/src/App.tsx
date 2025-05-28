@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 import { Hero } from './components/Hero'
 import { MobileUseShowCase } from './components/MobileUseShowCase'
 import { NavBar } from './components/NavBar'
@@ -18,6 +19,7 @@ function App() {
       <MobileUseShowCase />
       <PricingInfos />
       <QASection />
+      <Footer />
     </>
   )
 }
