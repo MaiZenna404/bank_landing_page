@@ -2,6 +2,7 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Logo from "@/assets/svg/Zynor-removebg-preview.svg";
 
 import type { ReactElement } from "react";
 
@@ -87,10 +88,17 @@ export default function Footer() {
         {/* Footer Links Section */}
         <section className="flex flex-row flex-wrap justify-center mb-8 mt-15 max-w-6xl mx-auto gap-24 text-lg">
           <div className="w-64">
-            <h3 className="text-2xl font-semibold mb-8">
-              <span className="text-emerald-600">Z</span>ynor{" "}
-              <span className="text-emerald-600">B</span>ank
-            </h3>
+            <div className="flex flex-row items-center mb-4">
+              <img
+                src={Logo}
+                alt="Zynor Bank Logo"
+                className="w-32 h-32"
+              />
+              <h3 className="text-2xl font-semibold mb-2">
+                <span className="text-emerald-600">Z</span>ynor{" "}
+                <span className="text-emerald-600">B</span>ank
+              </h3>
+            </div>
             <p>Modern banking for everyone.</p>
             <p>Secure, transparent, and designed for the digital age.</p>
             <ul className="flex flex-row mt-8">
